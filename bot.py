@@ -79,20 +79,22 @@ logging.basicConfig(level=logging.INFO,
 logger = logging.getLogger(__name__)
 
 # --- Command Button Layouts (ReplyKeyboardMarkup) ---
-COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
-    [{"text": "📢 Updates Channel", "style": "primary"}],
-    [{"text": "📤 Upload File", "style": "danger"}, {"text": "📂 Check Files", "style": "success"}],
-    [{"text": "⚡ Bot Speed", "style": "danger"}, {"text": "📊 Statistics", "style": "success"}],
-    [{"text": "📞 Contact Owner", "style": "primary"}],
+# User keyboard
+USER_KEYBOARD = [
+    ["📢 Updates Channel"],
+    ["📤 Upload File", "📂 Check Files"],
+    ["⚡ Bot Speed", "📊 Statistics"],
+    ["📞 Contact Owner"],
 ]
 
-ADMIN_COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
-    [{"text": "📢 Updates Channel", "style": "primary"}],
-    [{"text": "📤 Upload File", "style": "danger"}, {"text": "📂 Check Files", "style": "success"}],
-    [{"text": "⚡ Bot Speed", "style": "danger"}, {"text": "📊 Statistics", "style": "success"}],
-    [{"text": "💳 Subscriptions", "style": "danger"}, {"text": "📢 Broadcast", "style": "success"}],
-    [{"text": "🔒 Lock Bot", "style": "danger"}, {"text": "🟢 Running All Code", "style": "success"}],
-    [{"text": "👑 Admin Panel", "style": "danger"}, {"text": "📞 Contact Owner", "style": "success"}],
+# Admin keyboard
+ADMIN_KEYBOARD = [
+    ["📢 Updates Channel"],
+    ["📤 Upload File", "📂 Check Files"],
+    ["⚡ Bot Speed", "📊 Statistics"],
+    ["💳 Subscriptions", "📢 Broadcast"],
+    ["🔒 Lock Bot", "🟢 Running All Code"],
+    ["👑 Admin Panel", "📞 Contact Owner"],
 ]
 
 # --- Database Setup ---
