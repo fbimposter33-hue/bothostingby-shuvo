@@ -79,16 +79,14 @@ logging.basicConfig(level=logging.INFO,
 logger = logging.getLogger(__name__)
 
 # --- Command Button Layouts (ReplyKeyboardMarkup) ---
-# User keyboard
-USER_KEYBOARD = [
+COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
     ["📢 Updates Channel"],
     ["📤 Upload File", "📂 Check Files"],
     ["⚡ Bot Speed", "📊 Statistics"],
     ["📞 Contact Owner"],
 ]
 
-# Admin keyboard
-ADMIN_KEYBOARD = [
+ADMIN_COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
     ["📢 Updates Channel"],
     ["📤 Upload File", "📂 Check Files"],
     ["⚡ Bot Speed", "📊 Statistics"],
